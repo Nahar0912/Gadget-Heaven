@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Categories from './../Categories/Categories';
+import Categories from '../Categories/Categories';
 import Gadgets from './../Gadgets/Gadgets';
 import ErrorPage from './../ErrorPage/ErrorPage';
 
