@@ -11,7 +11,7 @@ const Wishlist = () => {
             <div className='mx-20 mt-10 mb-7'>
                 <h1 className='font-bold text-2xl'>Wish List</h1>
             </div>
-            <div className='mx-20'>
+            <div className='mx-20 px-60'>
                 {wishlist.length === 0 ? (
                     <p>Your wishlist is empty!</p>
                 ) : (
@@ -21,15 +21,15 @@ const Wishlist = () => {
                             <div className='flex flex-col'>
                                 <h2 className='font-bold'>{item.product_title}</h2>
                                 <p>Price: ${item.price}</p>
-                                <div className='flex gap-2'>
-                                    <button className='btn bg-purple-600 text-white' onClick={() => addToCart(item)}>
-                                        Add To Cart
-                                    </button>
-                                    <button className='btn' onClick={() => removeFromWishlist(item.product_id)}>
-                                        Remove
-                                    </button>
-                                </div>
+                                <button className='btn bg-purple-600 text-white' onClick={() => addToCart(item)}>
+                                    Add To Cart
+                                </button>
                             </div>
+                            <button className='btn' onClick={() => removeFromWishlist(item.product_id)}>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="red" className="size-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                            </button>
                         </div>
                     ))
                 )}
