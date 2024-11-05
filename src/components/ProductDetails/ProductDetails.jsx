@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import { useLoaderData } from 'react-router-dom';
 import { useCart } from '../CartContext'; 
 import { useWishlist } from '../WishlistContext'; 
+import { ToastContainer, toast } from 'react-toastify'; 
+import 'react-toastify/dist/ReactToastify.css';
 
 const ProductDetails = () => {
     const { productId } = useParams();
@@ -12,10 +14,9 @@ const ProductDetails = () => {
     const { addToCart } = useCart(); 
     const { wishlist, addToWishlist } = useWishlist();
     
-    const [isInWishlist, setIsInWishlist] = useState(false); // Local state for wishlist button
+    const [isInWishlist, setIsInWishlist] = useState(false); 
 
     useEffect(() => {
-        // Check if the product is already in the wishlist
         const existsInWishlist = wishlist.some(item => item.product_id === id);
         setIsInWishlist(existsInWishlist);
     }, [wishlist, id]);
@@ -25,6 +26,11 @@ const ProductDetails = () => {
     }
 
     const { product_image, product_title, price, Specification, availability, description, rating } = product;
+
+    const handleAddToCart = () => {
+        addToCart(product);
+        toast.success("Item added successfully!"); 
+    };
 
     return (
         <div className='mx-10 flex flex-col justify-center items-center'>
@@ -50,7 +56,7 @@ const ProductDetails = () => {
                     </ul>
                     <p className='font-bold'>Rating: {rating}</p>
                     <div className="card-actions">
-                        <button className="btn bg-purple-600 text-white rounded-full" onClick={() => addToCart(product)}>
+                        <button className="btn bg-purple-600 text-white rounded-full" onClick={handleAddToCart}>
                             Add To Cart
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
@@ -71,6 +77,7 @@ const ProductDetails = () => {
                     </div>
                 </div>
             </div>
+            <ToastContainer position="top-center" /> 
         </div>
     );
 };

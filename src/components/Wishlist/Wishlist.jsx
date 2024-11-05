@@ -1,10 +1,17 @@
 import React from 'react';
 import { useWishlist } from '../WishlistContext'; 
 import { useCart } from '../CartContext'; 
+import { ToastContainer, toast } from 'react-toastify'; // Import ToastContainer and toast
+import 'react-toastify/dist/ReactToastify.css'; // Import CSS for Toastify
 
 const Wishlist = () => {
     const { wishlist, removeFromWishlist } = useWishlist(); 
     const { addToCart } = useCart(); 
+
+    const handleAddToCart = (item) => {
+        addToCart(item); // Add item to cart
+        toast.success("Item added to cart successfully!"); // Show success toast
+    };
 
     return (
         <div>
@@ -21,7 +28,7 @@ const Wishlist = () => {
                             <div className='flex flex-col'>
                                 <h2 className='font-bold'>{item.product_title}</h2>
                                 <p>Price: ${item.price}</p>
-                                <button className='btn bg-purple-600 text-white' onClick={() => addToCart(item)}>
+                                <button className='btn bg-purple-600 text-white' onClick={() => handleAddToCart(item)}>
                                     Add To Cart
                                 </button>
                             </div>
@@ -34,6 +41,7 @@ const Wishlist = () => {
                     ))
                 )}
             </div>
+            <ToastContainer position='top-center'/> 
         </div>
     );
 };

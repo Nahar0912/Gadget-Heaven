@@ -1,5 +1,3 @@
-// src/main.jsx
-
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -14,6 +12,7 @@ import Cart from './components/Cart/Cart';
 import Wishlist from './components/Wishlist/Wishlist';
 import { CartProvider } from "./components/CartContext"; 
 import { WishlistProvider } from "./components/WishlistContext";
+import { ToastContainer, toast } from 'react-toastify';
 
 const router = createBrowserRouter([
   {
@@ -56,6 +55,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <CartProvider>
       <WishlistProvider>
+        <ToastContainer position="top-center" />
         <RouterProvider router={router} />
       </WishlistProvider>
     </CartProvider>
