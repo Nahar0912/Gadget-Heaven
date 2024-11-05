@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Gadget = ({ gadget }) => {
     return (
@@ -10,7 +11,9 @@ const Gadget = ({ gadget }) => {
                 <h2 className="card-title">Name: {gadget.product_title}</h2>
                 <p>Price: ${gadget.price}</p>
                 <div className="card-actions">
-                    <button className="btn rounded-full">View Details</button>
+                    <Link to={`/product/${gadget.product_id}`}>
+                        <button className="btn text-purple-700 border border-purple-700 rounded-full">View Details</button>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Categories from './../Categories/Categories';
 import Gadgets from './../Gadgets/Gadgets';
+import ErrorPage from './../ErrorPage/ErrorPage';
 
 const MainSection = () => {
     const [gadgets, setGadgetsData] = useState([]);
@@ -22,7 +23,11 @@ const MainSection = () => {
             <h1 className="text-center font-bold text-3xl">Explore Cutting-Edge Gadgets</h1>
             <div className='flex flex-col md:flex-row justify-between mt-10 mb-7'>
                 <Categories setSelectedCategory={setSelectedCategory} />
-                <Gadgets gadgets={filteredGadgets} />
+                {filteredGadgets.length > 0 ? (
+                    <Gadgets gadgets={filteredGadgets} />
+                ) : (
+                    <ErrorPage />
+                )}
             </div>
         </div>
     );
