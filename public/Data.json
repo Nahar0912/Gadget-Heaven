@@ -1,0 +1,162 @@
+[
+    {
+        "product_id": 1,
+        "product_title": "Dell XPS 13",
+        "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuOco-g5PTxRIFiuLuy9PWOOg_WP4gj-zvLA&s",
+        "category": "laptops",
+        "price": 999,
+        "description": "A high-performance laptop with an InfinityEdge display.",
+        "Specification": [
+            "13.3 inch FHD Display",
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 2,
+        "product_title": "Apple MacBook Air",
+        "product_image": "https://ryans.com/storage/products/main/apple-macbook-air-early-2024-apple-m3-chip-8gb-11711605957.webp",
+        "category": "laptops",
+        "price": 1199,
+        "description": "Lightweight and powerful laptop with Apple M1 chip.",
+        "Specification": [
+            "13.3 inch Retina Display",
+            "Apple M1 Chip",
+            "8GB RAM",
+            "256GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 3,
+        "product_title": "Lenovo ThinkPad X1 Carbon",
+        "product_image": "https://computermania-bd.b-cdn.net/wp-content/uploads/LENOVO-Thinkpad-10-2.jpg",
+        "category": "laptops",
+        "price": 1349,
+        "description": "A durable laptop designed for business professionals.",
+        "Specification": [
+            "14 inch FHD Display",
+            "Intel Core i7",
+            "16GB RAM",
+            "1TB SSD"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 4,
+        "product_title": "HP Spectre x360",
+        "product_image": "https://computermania-bd.b-cdn.net/wp-content/uploads/HP-Spectre-16-F1013DX-in-BD.jpg",
+        "category": "laptops",
+        "price": 1299,
+        "description": "A premium convertible laptop with a sleek design.",
+        "Specification": [
+            "13.3 inch 4K OLED Display",
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 5,
+        "product_title": "Acer Aspire 5",
+        "product_image": "https://bme.com.bd/public/uploads/products/photos/zE0HSg7bmaT8CVX0Lu2mrXJQr2cpgUd23cIJ8igB.jpeg",
+        "category": "laptops",
+        "price": 649,
+        "description": "Affordable laptop with solid performance.",
+        "Specification": [
+            "15.6 inch FHD Display",
+            "AMD Ryzen 5",
+            "8GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.2
+    },
+    {
+        "product_id": 6,
+        "product_title": "Asus ZenBook 14",
+        "product_image": "https://www.khancomputers.com.bd/img/2020/09/ASUS-ZenBook-14-UX434FQ-Core-i7-10th-Gen-14-Inch-FHD-Laptop-with-Windows-10_1.jpg.webp",
+        "category": "laptops",
+        "price": 899,
+        "description": "A stylish and powerful ultrabook for everyday use.",
+        "Specification": [
+            "14 inch FHD Display",
+            "Intel Core i5",
+            "8GB RAM",
+            "256GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": 7,
+        "product_title": "Samsung Galaxy S21",
+        "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb7rqs8aGXj4FTc32NHnQXK_B0qKA3_fUnxQ&s",
+        "category": "phones",
+        "price": 799,
+        "description": "A flagship smartphone with cutting-edge features.",
+        "Specification": [
+            "6.2 inch Dynamic AMOLED",
+            "Exynos 2100",
+            "8GB RAM",
+            "128GB Storage"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 8,
+        "product_title": "Apple iPhone 15",
+        "product_image": "https://www-mobiledokan.co/wp-content/uploads/2024/04/Apple-iPhone-15-pink.png",
+        "category": "phones",
+        "price": 899,
+        "description": "The latest iPhone with advanced camera system.",
+        "Specification": [
+            "6.1 inch Super Retina XDR",
+            "A17 Bionic Chip",
+            "4GB RAM",
+            "128GB Storage"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": 9,
+        "product_title": "Apple Watch Series 7",
+        "product_image": "https://i5.walmartimages.com/seo/Pre-Owned-Apple-Watch-Series-6-40mm-WiFi-Only-Space-Gray-Smart-Watch_b6acc69b-c6f3-473a-ab73-9ebb989d76c7.2dac0d9b1394716364177ebfc8f978f6.jpeg",
+        "category": "smart watches",
+        "price": 399,
+        "description": "A smartwatch with fitness tracking and heart monitoring.",
+        "Specification": [
+            "GPS + Cellular",
+            "Always-On Retina Display",
+            "Blood Oxygen App",
+            "Fitness Tracker"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 10,
+        "product_title": "Samsung Galaxy Watch 5",
+        "product_image": "https://www.custommacbd.com/cdn/shop/products/GalaxyWatch5-blue-custom-ma-bd.jpg?v=1661494309",
+        "category": "smart watches",
+        "price": 249,
+        "description": "A stylish smartwatch with health and fitness features.",
+        "Specification": [
+            "1.4 inch AMOLED Display",
+            "Heart Rate Monitor",
+            "Body Composition Analysis",
+            "Fitness Tracker"
+        ],
+        "availability": true,
+        "rating": 4.5
+    }
+]
