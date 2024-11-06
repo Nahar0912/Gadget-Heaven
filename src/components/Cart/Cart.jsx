@@ -33,7 +33,11 @@ const Cart = () => {
                 </div>
                 <div className='flex gap-3'>
                     <h1 className='font-bold text-2xl'>Total cost: ${totalPrice}</h1>
-                    <button onClick={sortByPrice} className='btn rounded-full'>Sort by Price</button>
+                    <button onClick={sortByPrice} className='btn rounded-full'>Sort by Price
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 13.5V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 9.75V10.5" />
+                        </svg>
+                    </button>
                     <button 
                         onClick={handlePurchase} 
                         className={`btn bg-purple-600 text-white rounded-full ${totalPrice === 0 ? "opacity-50 cursor-not-allowed" : ""}`}
