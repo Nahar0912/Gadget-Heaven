@@ -5,6 +5,7 @@ import { useCart } from '../CartContext';
 import { useWishlist } from '../WishlistContext';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ReactStars from 'react-stars';
 
 const ProductDetails = () => {
     const { productId } = useParams();
@@ -41,9 +42,9 @@ const ProductDetails = () => {
 
             <div className="bg-white flex justify-center items-center -mt-36 relative z-10 h-96 w-2/3 p-10">
                 <figure>
-                    <img className='h-80' src={product_image} alt={product_title} />
+                    <img className='h-64' src={product_image} alt={product_title} />
                 </figure>
-                <div className="card-body">
+                <div className="card-body mt-10">
                     <h2 className="card-title">Name: {product_title}</h2>
                     <p>Price: ${price}</p>
                     <p className='w-20 text-center border border-green-900 bg-green-200 rounded-full'>{availability ? 'In Stock' : 'Out of Stock'}</p>
@@ -55,6 +56,15 @@ const ProductDetails = () => {
                         ))}
                     </ul>
                     <p className='font-bold'>Rating: {rating}</p>
+                        <span>
+                            <ReactStars
+                            count={5}
+                            value={rating}
+                            edit={false}
+                            size={24}
+                            color2={'#ffd700'}
+                            />
+                        </span>
                     <div className="card-actions">
                         <button className="btn bg-purple-600 text-white rounded-full" onClick={handleAddToCart}>
                             Add To Cart
