@@ -8,7 +8,7 @@ const Banner = () => {
                     <button className="btn rounded-full px-10 text-purple-700">Shop Now</button>
                 </div>
             </div>
-            <img className="-mt-36 relative z-10 h-80 w-2/4 outline outline-1 outline-white outline-offset-8 rounded-3xl" src="/public/images/banner.jpg" alt="" />
+            <img className="-mt-36 relative z-10 h-80 w-2/4 outline outline-1 outline-white outline-offset-8 rounded-3xl" src="images/banner.jpg" alt="" />
         </div>
     );
 };

@@ -1,16 +1,16 @@
 import React from 'react';
 import { useWishlist } from '../WishlistContext'; 
 import { useCart } from '../CartContext'; 
-import { ToastContainer, toast } from 'react-toastify'; // Import ToastContainer and toast
-import 'react-toastify/dist/ReactToastify.css'; // Import CSS for Toastify
+import { ToastContainer, toast } from 'react-toastify'; 
+import 'react-toastify/dist/ReactToastify.css';
 
 const Wishlist = () => {
     const { wishlist, removeFromWishlist } = useWishlist(); 
     const { addToCart } = useCart(); 
 
     const handleAddToCart = (item) => {
-        addToCart(item); // Add item to cart
-        toast.success("Item added to cart successfully!"); // Show success toast
+        addToCart(item); 
+        toast.success("Item added to cart successfully!");
     };
 
     return (

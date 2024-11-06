@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useLoaderData } from 'react-router-dom';
 import { useCart } from '../CartContext'; 
 import { useWishlist } from '../WishlistContext'; 
-import { ToastContainer, toast } from 'react-toastify'; 
+import { toast } from 'react-toastify'; 
 import 'react-toastify/dist/ReactToastify.css';
 
 const ProductDetails = () => {
@@ -76,8 +76,7 @@ const ProductDetails = () => {
                         </button>
                     </div>
                 </div>
-            </div>
-            <ToastContainer position="top-center" /> 
+            </div> 
         </div>
     );
 };

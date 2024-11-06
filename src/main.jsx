@@ -12,7 +12,7 @@ import Cart from './components/Cart/Cart';
 import Wishlist from './components/Wishlist/Wishlist';
 import { CartProvider } from "./components/CartContext"; 
 import { WishlistProvider } from "./components/WishlistContext";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer} from 'react-toastify';
 
 const router = createBrowserRouter([
   {

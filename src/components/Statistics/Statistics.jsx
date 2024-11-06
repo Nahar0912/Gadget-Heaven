@@ -1,7 +1,8 @@
+import ErrorPage from './../ErrorPage/ErrorPage';
 const Statistics = () => {
     return (
         <div>
-            this is stat
+            <ErrorPage></ErrorPage>
         </div>
     );
 };
