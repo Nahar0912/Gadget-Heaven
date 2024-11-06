@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 
 const Dashboard = () => {
     const location = useLocation();
+    const isCartActive = location.pathname === '/dashboard' || location.pathname === '/dashboard/cart';
+    const isWishlistActive = location.pathname === '/dashboard/wishlist';
 
     return (
         <div className="">
@@ -13,9 +15,7 @@ const Dashboard = () => {
                     <Link to="/dashboard/cart">
                         <button
                             className={`btn px-10 mr-3 rounded-full ${
-                                location.pathname === '/dashboard/cart'
-                                    ? 'bg-white text-purple-600'
-                                    : 'bg-inherit text-white'
+                                isCartActive ? 'bg-white text-purple-600' : 'bg-inherit text-white'
                             }`}
                         >
                             Cart
@@ -24,9 +24,7 @@ const Dashboard = () => {
                     <Link to="/dashboard/wishlist">
                         <button
                             className={`btn px-9 rounded-full ${
-                                location.pathname === '/dashboard/wishlist'
-                                    ? 'bg-white text-purple-600'
-                                    : 'bg-inherit text-white'
+                                isWishlistActive ? 'bg-white text-purple-600' : 'bg-inherit text-white'
                             }`}
                         >
                             Wishlist
@@ -34,6 +32,7 @@ const Dashboard = () => {
                     </Link>
                 </div>
             </div>
+
             <div className="p-10">
                 <Outlet />
             </div>
